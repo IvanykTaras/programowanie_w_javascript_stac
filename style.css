@@ -1,0 +1,14 @@
+#app{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.input_field{
+    display: flex;
+    margin:  1rem 0 ;
+}
+
+#wyniki{
+    margin-top: 1rem;
+}
