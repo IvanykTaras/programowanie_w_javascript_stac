@@ -51,7 +51,7 @@ function getNumbersArr(arr_fields){
 
 function count(){
     const result = MathTask(getNumbersArr(arr_fields));
-
+    console.log(123);
     wynikiPojemnik.innerHTML = `
         min: ${result.min}; <br>
         max: ${result.max}; <br>
@@ -69,4 +69,5 @@ createElement(input_fields);
 
 //add event listener 
 btnPrzelicz.addEventListener("click",()=>count());
+arr_fields.forEach(e=>e.lastChild.addEventListener('keydown',count));
 add_button.addEventListener("click", ()=>createElement(input_fields));
