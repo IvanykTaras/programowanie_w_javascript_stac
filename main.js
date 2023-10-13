@@ -14,19 +14,15 @@ function createElement(parent){
     const input = document.createElement("input")
     const button = document.createElement("button")
     
-    div.classList.add("input_field");
     
     input.type = "number";
     
     button.textContent = "-"
     button.addEventListener("click",()=>deleteElement(parent,div))
-
-
-
     
+    div.classList.add("input_field");
     div.appendChild(button);
     div.appendChild(input);
-
 
     arr_fields.push(div)
     parent.appendChild(div);
