@@ -1,0 +1,17 @@
+:root{
+    --slide-width: 300px;
+}
+
+.slider{
+    width: var(--slide-width);
+    height: 200px;
+    overflow: hidden;
+}
+
+.slider__track{
+    display: flex;
+}
+
+.slider__item{
+    width: var(--slide-width);
+}
