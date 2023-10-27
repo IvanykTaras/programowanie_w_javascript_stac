@@ -58,7 +58,8 @@ function onKeyPress(event) {
 
 let time = 0;
 function startCountSeconds() {
-    time = Date.now()
+
+    time = time == 0 ? Date.now() : time;
     console.log("press");
 }
 
