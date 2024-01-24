@@ -1,0 +1,50 @@
+.note,.noteCreator{
+    width: 200px;
+    border: 2px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.noteCreator{
+    display: flex;
+    flex-direction: column;
+}
+
+.note__header{
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.note__body{
+    padding: .5rem;
+}
+
+.note__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+
+.note__tag{
+    background: #000;
+    color: white;
+    padding: .25rem;
+}
+
+.root{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.forms{
+    display: flex;
+
+}
+
+.color{
+    background: lightgray;
+}
