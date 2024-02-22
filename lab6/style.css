@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+
+#timer{
+    grid-area: timer;
+}
+
+#score{
+    grid-area: score;
+}
+
+#high_score{
+    grid-area: high_score;
+}
+
+#canvas{
+    grid-area: canvas;
+    width: 100%;
+}
+
+#start{
+    grid-area: start;
+}
+
+#stop{
+    grid-area: stop;
+}
+
+.game{
+    display: grid;
+    grid-template-areas: 
+    "timer score high_score"
+    "canvas canvas canvas"
+    "start stop ...";
+
+}
