@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <audio src="./sounds/clap.wav"  id="clap"></audio>
-    <audio src="./sounds/hihat.wav" id="hihat"></audio>
+    <div class="blocks">
+        <div class="sounds">
+            <audio src="./sounds/boom.wav"  id="boom" controls></audio> <span>Q button / boom</span>
+            <audio src="./sounds/clap.wav" id="clap" controls></audio> <span>W button / clap</span>
+            <audio src="./sounds/hihat.wav" id="hihat" controls></audio> <span>E button / hiha</span>
+            <audio src="./sounds/kick.wav"  id="kick" controls></audio> <span>A button / kick</span>
+            <audio src="./sounds/openhat.wav" id="openhat" controls></audio> <span>S button / openhat</span>
+            <audio src="./sounds/ride.wav" id="ride" controls></audio> <span>D button / ride</span>
+            <audio src="./sounds/snare.wav"  id="snare" controls></audio> <span>Z button / snare</span>
+            <audio src="./sounds/tink.wav" id="tink" controls></audio> <span>X button / tink</span>
+            <audio src="./sounds/tom.wav" id="tom" controls></audio> <span>C button / tom</span>    
+        </div>
+    
+        <div class="chanels">
+            <label for="chanel_1">chanel 1</label>
+            <input type="radio" name="x" id="chanel_1" checked>
+            <label for="chanel_2">chanel 2</label>
+            <input type="radio" name="x" id="chanel_2">
+            <label for="chanel_3">chanel 3</label>
+            <input type="radio" name="x" id="chanel_3">
+            <label for="chanel_4">chanel 4</label>
+            <input type="radio" name="x" id="chanel_4">
+        </div>
+
+        <div class="buttons">
+            <button id="play">play</button>
+            <button id="playAll">play all</button>
+            <button id="record">record</button>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
